@@ -1,0 +1,8 @@
+services:
+  warehouse:
+    build: .
+    volumes:
+      - ./output:/workspace/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    mem_limit: 3g
